@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: #05070f;
+  color: #f5f7ff;
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for an enterprise feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #05070f;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#2563eb, #4f8cff);
+  border-radius: 8px;
+}
+
+@layer components {
+  /* Reusable glassmorphism card */
+  .glass {
+    @apply bg-white/[0.04] border border-white/10 backdrop-blur-xl rounded-3xl;
+    box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.7);
+  }
+
+  .glass-hover {
+    @apply transition-all duration-500;
+  }
+  .glass-hover:hover {
+    @apply border-glow/40 bg-white/[0.07];
+    box-shadow: 0 0 60px -15px rgba(79, 140, 255, 0.45);
+  }
+
+  .gradient-text {
+    background: linear-gradient(120deg, #ffffff 0%, #6ea8ff 60%, #2563eb 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-pad {
+    @apply px-6 py-16 sm:px-10 md:px-16 lg:px-24;
+  }
+}
+
+/* Animated gradient orbs in the background */
+.orb {
+  position: fixed;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Hide scrollbar on the horizontal top-nav strip (mobile) */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
