@@ -5,7 +5,7 @@ import { HiDownload, HiMail, HiChevronRight } from 'react-icons/hi'
 import { FaLinkedin } from 'react-icons/fa'
 
 const STATS = [
-  { value: '3.72', label: 'GPA' },
+  { value: '3.94', label: 'GPA' },
   { value: "Dean's List", label: 'Award' },
   { value: 'Accounting', label: 'Major' },
   { value: 'Data Science', label: 'Minor' },
@@ -67,7 +67,7 @@ export default function Home({ onNavigate }) {
           whileHover={{ scale: 1.05 }}
         >
           <img
-            src="/profile.jpg"
+            src="/profile.svg"
             alt="Raman Dahal"
             className="h-full w-full object-cover"
           />
@@ -92,15 +92,32 @@ export default function Home({ onNavigate }) {
         Marshall, Minnesota
       </motion.p>
 
-      <motion.p
+      <motion.div
         variants={item}
-        className="mt-6 max-w-2xl font-body text-sm leading-relaxed text-silver/90 sm:text-base"
+        className="mt-6 max-w-3xl space-y-3 font-body text-sm leading-relaxed text-silver/90 sm:text-base"
       >
-        Diligent and result-driven Accounting student at Southwest Minnesota State
-        University with a deep passion for Auditing, Financial Analysis, Tax
-        Regulations, and Data Analytics. A critical thinker and problem solver with
-        an understanding of GAAP, IFRS, and Financial Integrity.
-      </motion.p>
+        <p>
+          I am a high-performing junior pursuing a career in accounting, with a
+          strong academic record and a clear commitment to obtaining the CPA
+          designation upon completion of my degree. I bring a disciplined,
+          results-oriented mindset combined with a strong foundation in financial
+          analysis, data handling, and problem-solving.
+        </p>
+        <p>
+          Beyond traditional accounting, I have a keen interest in the
+          intersection of finance and technology, particularly in developing
+          tools and systems that enhance efficiency, accuracy, and strategic
+          decision-making. This dual focus enables me to approach challenges with
+          both analytical precision and innovative thinking.
+        </p>
+        <p>
+          I am known for my strong work ethic, attention to detail, and ability
+          to deliver high-quality outcomes under demanding environments. I seek
+          opportunities where I can contribute meaningful value, continuously
+          develop my expertise, and position myself as a trusted and high-impact
+          professional within the organization.
+        </p>
+      </motion.div>
 
       {/* Stats cards */}
       <motion.div
