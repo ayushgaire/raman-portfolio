@@ -54,6 +54,26 @@ export default function Home({ onNavigate }) {
       animate="show"
       className="section-pad flex min-h-screen flex-col items-center justify-center text-center"
     >
+      {/* Codyza Badge */}
+      <motion.a
+        variants={item}
+        href="https://codyza.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ scale: 1.05 }}
+        className="mb-6 flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 backdrop-blur-xl transition-colors hover:border-glow/40"
+      >
+        <img
+          src="/codyza-logo.png"
+          alt="Codyza"
+          className="h-5 w-5 object-contain"
+        />
+
+        <span className="font-body text-xs uppercase tracking-[0.25em] text-glow-soft">
+          Powered by Codyza.com
+        </span>
+      </motion.a>
+
       {/* Profile Image */}
       <motion.div variants={item} className="relative mb-8 h-52 w-52">
         <div className="absolute inset-0 opacity-70">
@@ -195,38 +215,6 @@ export default function Home({ onNavigate }) {
         >
           <HiMail className="text-lg" />
         </motion.a>
-      </motion.div>
-
-      {/* Navigation */}
-      <motion.div
-        variants={item}
-        className="mt-14 flex flex-col items-center"
-      >
-        <p className="font-body text-xs uppercase tracking-[0.3em] text-silver/70">
-          Explore the full portfolio
-        </p>
-
-        <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-          {[
-            ['education', 'Education'],
-            ['experience', 'Experience'],
-            ['additional', 'Additional Info'],
-            ['references', 'References'],
-            ['contact', 'Contact'],
-          ].map(([id, label], i) => (
-            <motion.button
-              key={id}
-              onClick={() => onNavigate(id)}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1 + i * 0.1 }}
-              whileHover={{ scale: 1.06, y: -3 }}
-              className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 font-body text-xs text-silver backdrop-blur-xl transition-colors hover:border-glow/40 hover:text-white"
-            >
-              {label}
-            </motion.button>
-          ))}
-        </div>
       </motion.div>
     </motion.section>
   )

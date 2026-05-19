@@ -13,10 +13,10 @@ import { GiPoolTriangle, GiPuzzle } from 'react-icons/gi'
 import { SectionTitle } from './Education'
 
 const SKILLS = [
-  { name: 'Excel proficiency', level: 90, icon: FaFileExcel },
-  { name: 'Accurate financial record keeping', level: 88, icon: FaClipboardCheck },
-  { name: 'Basic accounting software', level: 75, icon: FaCalculator },
-  { name: 'Data verification', level: 82, icon: FaCheckDouble },
+  { name: 'Excel proficiency', level: 100, icon: FaFileExcel },
+  { name: 'Accurate financial record keeping', level: 100, icon: FaClipboardCheck },
+  { name: 'Basic accounting software', level: 90, icon: FaCalculator },
+  { name: 'Data verification', level: 100, icon: FaCheckDouble },
   { name: 'Basic Python skills', level: 60, icon: FaPython },
 ]
 
