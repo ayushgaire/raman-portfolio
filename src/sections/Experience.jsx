@@ -9,7 +9,7 @@ const EXPERIENCE = [
     icon: FaUniversity,
     company: 'Leading Edge Credit Union',
     location: 'Marshall, MN',
-    role: 'Accounts Service Representative, Summer Part-Time',
+    role: 'Accounts Service Representative, Summer full-Time',
     points: [
       'Transaction processing',
       'Account reconciliation',

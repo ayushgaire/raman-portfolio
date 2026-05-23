@@ -17,7 +17,7 @@ const SKILLS = [
   { name: 'Accurate financial record keeping', level: 100, icon: FaClipboardCheck },
   { name: 'Basic accounting software', level: 90, icon: FaCalculator },
   { name: 'Data verification', level: 100, icon: FaCheckDouble },
-  { name: 'Basic Python skills', level: 60, icon: FaPython },
+  { name: 'Basic Python skills', level: 85, icon: FaPython },
 ]
 
 const ACTIVITIES = [

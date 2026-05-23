@@ -60,7 +60,7 @@ export default function Education() {
 
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <InfoPill icon={HiCalendar} label="Anticipated Graduation" value="August 2028" />
-                <InfoPill icon={HiStar} label="GPA" value="3.72" />
+                <InfoPill icon={HiStar} label="GPA" value="3.94" />
               </div>
 
               <div className="mt-4 flex items-center gap-2 rounded-2xl border border-glow/30 bg-glow/10 px-4 py-3">
